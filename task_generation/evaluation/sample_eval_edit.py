@@ -228,7 +228,7 @@ def get_accessibility_file_pairs(url_tree_file=None, accessibility_dir="espn", n
                and url_pairs_info contains the URL information
     """
     if url_tree_file is None:
-        url_tree_file = "/path/to/your/data/Agentrek_expriment/url_tree_url_tree_structure.txt"
+        url_tree_file = "/path/to/your/data/url_tree_url_tree_structure.txt"
     
     # Sample URL pairs
     url_pairs = sample_url_pairs_for_multihop(url_tree_file, num_pairs, min_children, seed)
@@ -276,7 +276,7 @@ def generate_multihop_tasks_from_sampled_urls(url_tree_file=None, accessibility_
         dict: Information about sampled URLs and file pairs suitable for multi-hop task generation
     """
     if url_tree_file is None:
-        url_tree_file = "/path/to/your/data/Agentrek_expriment/url_tree_url_tree_structure.txt"
+        url_tree_file = "/path/to/your/data/url_tree_url_tree_structure.txt"
     
     # Get file pairs based on URL sampling
     file_pairs, url_pairs_info = get_accessibility_file_pairs(
@@ -331,10 +331,10 @@ def generate_and_save_multihop_tasks(url_tree_file=None, accessibility_dir=None,
         dict: Summary of the generation process
     """
     if url_tree_file is None:
-        url_tree_file = "/path/to/your/data/Agentrek_expriment/url_tree_url_tree_structure.txt"
+        url_tree_file = "/path/to/your/data/url_tree_url_tree_structure.txt"
     
     if accessibility_dir is None:
-        accessibility_dir = "/path/to/your/data/Agentrek_expriment/crawled_websites/espn.com"
+        accessibility_dir = "/path/to/your/data/crawled_websites/espn.com"
     
     print(f"=== Multi-hop Task Generation from Sampled URLs ===")
     print(f"URL tree file: {url_tree_file}")
