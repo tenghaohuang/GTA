@@ -1,0 +1,37 @@
+{
+  "url": "https://example.com",
+  "cookies": [
+    {
+      "name": "session_id",
+      "value": "your_session_id_here",
+      "domain": "example.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_preference",
+      "value": "dark_mode",
+      "domain": "example.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "show_browser": false,
+  "debug_buttons": true,
+  "wait_time": 5000,
+  "timeout": 30000,
+  "output_file": "accessibility_tree_output.txt",
+  "crawl": false,
+  "max_depth": 4,
+  "max_pages": 2000,
+  "crawl_delay": 1.0,
+  "max_links_per_depth": 10,
+  "same_domain_only": true,
+  "output_dir": "crawl_results"
+} 
